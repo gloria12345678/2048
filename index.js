@@ -13,10 +13,9 @@ $(document).ready(function(){;
   });
    $(document).on('touchmove',function(e){
             tochEnd = e.originalEvent.changedTouches[0].pageY;
-            console.log(tochEnd);
-            // tochIng = tochEnd- tochStat;
-            if(tochEnd>400){
-              console.log(tochEnd);
+            tochIng = tochEnd- tochStat;
+            console.log(tochIng)
+            if(tochIng>500){
               $("#flip").slideDown();
             }
         });
