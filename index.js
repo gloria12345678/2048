@@ -16,7 +16,7 @@ $(document).ready(function(){;
             tochEnd = e.originalEvent.changedTouches[0].pageY;
             tochIng = tochEnd- tochStat;
             console.log(tochIng)
-            if(tochIng>300){
+            if(tochIng>200){
               $("#flip").slideDown();
               $("#aaa").slideUp();
             }
