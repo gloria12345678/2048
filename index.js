@@ -5,6 +5,7 @@ $(document).ready(function(){;
   $("#flip").css({"height":winHig+"px"})
   $("#panel").click(function(){
     $("#flip").slideUp();
+    $("#aaa").slideDown();
   })
   var tochStat,tochIng,tochEnd;
   $(document).on('touchstart',function(e){
@@ -15,8 +16,9 @@ $(document).ready(function(){;
             tochEnd = e.originalEvent.changedTouches[0].pageY;
             tochIng = tochEnd- tochStat;
             console.log(tochIng)
-            if(tochIng>500){
+            if(tochIng>300){
               $("#flip").slideDown();
+              $("#aaa").slideUp();
             }
         });
 }); 
