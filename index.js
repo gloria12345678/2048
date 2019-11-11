@@ -15,7 +15,7 @@ $(document).ready(function(){;
             tochEnd = e.originalEvent.changedTouches[0].pageY;
             console.log(tochEnd);
             // tochIng = tochEnd- tochStat;
-            if(tochEnd>500){
+            if(tochEnd>400){
               console.log(tochEnd);
               $("#flip").slideDown();
             }
