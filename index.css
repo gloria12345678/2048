@@ -1,0 +1,275 @@
+#logo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+ }
+ .nav{
+   z-index: 1;
+   position:absolute;
+   width: 100%;
+   height: 150px;
+   overflow:hidden;
+ }
+ .i18{
+   float: left;
+   margin-top: 12px;
+   float: left;
+ }
+ .call{
+    width: 200px;
+    height: 40px;
+    font-size: 23px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #9c6b22;
+    border-radius: 0px 15px 15px 0px;
+    float: right;
+    display: flex;
+    justify-content: center;
+ }
+ .call_text{
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #000000;
+ }
+ .nav1{
+   float: right;
+   padding-top: 18px;
+ }
+ .nav0{
+   margin-left: 50px;
+ }
+ .nav2{
+  margin-right: 20px;
+  position: relative;
+  font-size: 20px;
+  margin-top: 5px;
+  width: 90px;
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000;
+  text-align: right;
+ }
+.div2{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.past2{
+width: 100%;
+height: 80%;
+position:relative;
+top: 8%;
+
+}
+.sample1 img{
+width: 287px;
+position:inherit;
+top: -13%;
+}
+.sample1{
+width: 100%;
+height: 100%;
+position:relative;
+background: linear-gradient(to bottom right,#d0b9ea,#ffcd84);
+}
+.text1{
+  font-family: 'HYLingXinTiJ'; 
+  font-size: 33px;
+  z-index: 1;
+  padding: 2%;
+  color: #ff926c;
+  margin-top: 80px;
+}
+.text1 div{
+border-radius: 28px;
+font-family: 'HYYouYuanTiW';
+width: 500px;
+font-size: 25px;
+margin-top: 20px;
+color: cornflowerblue;
+background-color: #ffd3826b;
+}
+.text2{ 
+  width: 70%;
+  background-color: #8c85858f;
+  font-size: 22px;
+  padding: 2%;
+  color: #000000;
+  border-radius: 10px 10px 10px 10px;
+  border: 4px solid black;
+}
+h4{
+  margin: 0px;
+}
+.sample2{
+width: 100%;
+height: 100%;
+background:#000000;
+border-radius: 195px  0 0 0;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.text3{
+width: 85%;
+height:75%;
+background-color: #ffffff36;
+border: 2px solid #ffffff;
+border-radius: 30px;
+color: antiquewhite;
+font-size: 17px;
+padding-top: 3%;
+margin-top: 6%;
+}
+.text0{
+    height: 40%;
+}
+.text3 img{
+    height: 35%;
+    margin-top: 5px;
+}
+.past4{
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom right,#000000,#441414);
+border-radius: 0px 125px 0 0;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.title_{
+    font-family: 'HYLingXinTiJ'; 
+    font-size: 43px;
+   color: #ffffff;;
+}
+.Description{
+    font-size: 18px;
+    color: #ffffff;
+}
+.smpal4{
+  width: 80%;
+  height: 80%;
+  border-radius: 50px 50px 50px 50px;
+  border: 2px solid #ffffff;
+  background-color: #103b5a;
+ 
+}
+.text5{
+  font-family: 'HYYouYuanTiW';
+  position: absolute;
+  width: 100%;
+  height: 39px;
+  font-size: 25px;
+  color: #14324cab;
+  background-color: #ffffffa6;
+  z-index: 2;
+  top: 343px;
+}
+.girlbox img{
+  width: 65%;
+  border-radius: 20px 20px 20px 20px;
+  border: 4px solid #ffffff
+}
+.girlbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #310505;
+}
+@media screen and (min-width:758px) {
+.div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text1 {
+  margin-left: -300px;
+  margin-top: 71px;
+}
+.text1 div {
+  width: 357px;
+}
+.past2 {
+  position: unset;
+}
+  .sample1 img {
+    width: 287px;
+    position: inherit;
+    top: 6%;
+    left: 191px;
+}
+.girlbox img {
+  width: 55%;
+}
+.text3 {
+  width: 55%;
+  font-size: 33px;
+  padding-top: 9px;
+}
+h4 {
+  margin: 14px;
+  font-size: 35px;
+}
+.Description {
+  font-size: 30px;
+}
+.photo {
+  width: 61%;
+}
+.text2 {
+  font-size: 27px;
+  width: 55%;
+  padding: 0%;
+}
+.text5 {
+  height: 86px;
+  font-size: 70px;
+}
+}
+
+@media screen and (min-width:1000px) {
+  .girlbox img {
+    width: 26%;
+}
+
+.sample2 {
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.text3 {
+  width: 55%;
+  height: 75%;
+  font-size: 28px;
+}
+.photo {
+  width: 60%;
+}
+.sample1 img {
+  width: 382px;
+  position: inherit;
+  top: 6%;
+  left: 245px;
+}
+.text2 {
+  font-size: 21px;
+}
+.sample2 {
+  flex-direction: column;
+}
+}
+@media screen and (min-width:1366px) {
+  .photo {
+    width: 40%;
+}
+}
+@media screen and (min-height:1266px) {
+  .photo {
+    width: 60%;
+}
+}
