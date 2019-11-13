@@ -97,6 +97,7 @@ fetch(myApi)
     $('#lookBigPhoto'+i).css({"height":winHeight+"px"})
     $('#lookBigPhoto'+i).css({"width":"100%"})
     $('body').css('overflow','hidden');
+    $('body').css('height','100%');
  });
   $("#x"+i).click(function(){
     $('#lookBigPhoto'+i).css({"height":"0px"})
