@@ -2,65 +2,65 @@ var myList = document.getElementById('getMyStaff');
 var apiList = document.getElementById('girlPhoto');
 var myApi ="https://test-cms-alpha.herokuapp.com/sites/1/profiles.json"
 document.write('<script src="../swiper.min.js"></script>');
-fetch(myApi)
-.then(function(response) {
-   if (!response.ok) {
-    throw new Error("HTTP error, status = " + response.status);
-  }
-  return response.json();
-})
-.then(function(json) {
-    console.log(json);
-    console.log(json.length);
-   for(var i = 0; i < json.length; i++) {
-   var girlPhoto =document.createElement("div");
-   girlPhoto.setAttribute("class","swiper-slide");
-   girlPhoto.setAttribute("id","swiper2");
-   var j = i+i
-   var k = i+i+1
-   girlPhoto.innerHTML = '<div class="girlPhotoBigBox"><div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[j].avatars[0]+'"> <div class="girlPhotoName"> ' + json[j].name+ '</div></div></div><div class="girlPhotoBigBox"><div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[k].avatars[0]+'"><div class="girlPhotoName"> ' + json[k].name+ '</div></div></div>';
-   apiList.appendChild(girlPhoto);
-  }
-})
-.catch(function(error) {
-  var p = document.createElement('p');
-  // p.appendChild(
-  //   document.createTextNode('Error: ' + error.message)
-  // );
-  document.body.insertBefore(p, myList);
-});
+// fetch(myApi)
+// .then(function(response) {
+//    if (!response.ok) {
+//     throw new Error("HTTP error, status = " + response.status);
+//   }
+//   return response.json();
+// })
+// .then(function(json) {
+//     console.log(json);
+//     console.log(json.length);
+//    for(var i = 0; i < json.length; i++) {
+//    var girlPhoto =document.createElement("div");
+//    girlPhoto.setAttribute("class","swiper-slide");
+//    girlPhoto.setAttribute("id","swiper2");
+//    var j = i+i
+//    var k = i+i+1
+//    girlPhoto.innerHTML = '<div class="girlPhotoBigBox"><div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[j].avatars[0]+'"> <div class="girlPhotoName"> ' + json[j].name+ '</div></div></div><div class="girlPhotoBigBox"><div class="girlPhotoBox"><img src="https://test-cms-alpha.herokuapp.com'+json[k].avatars[0]+'"><div class="girlPhotoName"> ' + json[k].name+ '</div></div></div>';
+//    apiList.appendChild(girlPhoto);
+//   }
+// })
+// .catch(function(error) {
+//   var p = document.createElement('p');
+//   // p.appendChild(
+//   //   document.createTextNode('Error: ' + error.message)
+//   // );
+//   document.body.insertBefore(p, myList);
+// });
 
 
 
 
-var myList1 = document.getElementById('catchMynews');
-var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/1/tweets.json"
-// console.log(myList1);
-fetch(myApi1)
-.then(function(response) {
-  if (!response.ok) {
-    // throw new Error("HTTP error, status = " + response.status);
-  }
-  return response.json();
-})
-.then(function(json) {
-    // console.log(json);
-    // console.log(json.length);
-   for(var i = 0; i < json.length; i++) {
-    var listItem = document.createElement('div');
-    listItem.innerHTML = '<p>' + json[i].created_at+ '</p>';
-    listItem.innerHTML +='<hr>';
-    listItem.innerHTML +='<p>' + json[i].content + '<p>';
-    myList1.appendChild(listItem);
-  }
-})
-.catch(function(error) {
-  var p = document.createElement('p');
-  // p.appendChild(
-  //   // document.createTextNode('Error: ' + error.message)
-  // );
-  document.body.insertBefore(p, myList);
-});
+// var myList1 = document.getElementById('catchMynews');
+// var myApi1 ="https://test-cms-alpha.herokuapp.com/sites/1/tweets.json"
+// // console.log(myList1);
+// fetch(myApi1)
+// .then(function(response) {
+//   if (!response.ok) {
+//     // throw new Error("HTTP error, status = " + response.status);
+//   }
+//   return response.json();
+// })
+// .then(function(json) {
+//     // console.log(json);
+//     // console.log(json.length);
+//    for(var i = 0; i < json.length; i++) {
+//     var listItem = document.createElement('div');
+//     listItem.innerHTML = '<p>' + json[i].created_at+ '</p>';
+//     listItem.innerHTML +='<hr>';
+//     listItem.innerHTML +='<p>' + json[i].content + '<p>';
+//     myList1.appendChild(listItem);
+//   }
+// })
+// .catch(function(error) {
+//   var p = document.createElement('p');
+//   // p.appendChild(
+//   //   // document.createTextNode('Error: ' + error.message)
+//   // );
+//   document.body.insertBefore(p, myList);
+// });
 
 
 
@@ -92,17 +92,31 @@ fetch(myApi)
   var  winHeight = window.screen.height;
   var staffPro = document.getElementById('staffPro'+[i]);
   staffPro.addEventListener("click",function() {
+    console.log("2342341ff")
     let a=$(document).scrollTop()
     $('#lookBigPhoto'+i).css({"top":a+"px"})
     $('#lookBigPhoto'+i).css({"height":winHeight+"px"})
     $('#lookBigPhoto'+i).css({"width":"100%"})
-    $('body').css('overflow','hidden');
-    $('body').css('height','100%');
- });
+$(document).on('touchstart',function (e){
+  e.preventDefault();
+});
+  });
+  // $(staffPro).click(function(){
+  //   document.addEventListener('touchmove',function(e){
+  //     e.preventDefalut()
+  //   })
+  // });
+  // $(staffPro).click('touchmove',function(e){
+  //   e.preventDefalut()
+  // },false);
+//     staffPro.addEventListener('touchmove', function (event) {
+//     console.log("2342341aasdad")
+//     event.preventDefault();
+// },false);
   $("#x"+i).click(function(){
+    console.log("2342341aa")
     $('#lookBigPhoto'+i).css({"height":"0px"})
     $('#lookBigPhoto'+i).css({"width":"0"})
-    $('body').css('overflow','scroll');
     $('body').css('height','');
   });
    var mySwiper = new Swiper('#lookBig'+i,{
