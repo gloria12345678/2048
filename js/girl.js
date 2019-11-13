@@ -103,6 +103,7 @@ fetch(myApi)
     $('#lookBigPhoto'+i).css({"height":"0px"})
     $('#lookBigPhoto'+i).css({"width":"0"})
     $('body').css('overflow','scroll');
+    $('body').css('height','');
   });
    var mySwiper = new Swiper('#lookBig'+i,{
     direction : 'horizontal',
