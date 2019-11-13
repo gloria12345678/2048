@@ -97,22 +97,20 @@ fetch(myApi)
     $('#lookBigPhoto'+i).css({"top":a+"px"})
     $('#lookBigPhoto'+i).css({"height":winHeight+"px"})
     $('#lookBigPhoto'+i).css({"width":"100%"})
-$(document).on('touchstart',function (e){
-  e.preventDefault();
-});
+    $('body').css('touch-action','none');
   });
-  // $(staffPro).click(function(){
-  //   document.addEventListener('touchmove',function(e){
-  //     e.preventDefalut()
-  //   })
-  // });
-  // $(staffPro).click('touchmove',function(e){
-  //   e.preventDefalut()
-  // },false);
-//     staffPro.addEventListener('touchmove', function (event) {
-//     console.log("2342341aasdad")
-//     event.preventDefault();
-// },false);
+//   $(staffPro).click(function(){
+//     $(document).on('touchmove',function (e){
+//       e.preventDefault();
+//   });
+//   });
+//   // $(staffPro).click('touchmove',function(e){
+//   //   e.preventDefalut()
+//   // },false);
+// //     staffPro.addEventListener('touchmove', function (event) {
+// //     console.log("2342341aasdad")
+// //     event.preventDefault();
+// // },false);
   $("#x"+i).click(function(){
     console.log("2342341aa")
     $('#lookBigPhoto'+i).css({"height":"0px"})
