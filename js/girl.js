@@ -98,6 +98,7 @@ fetch(myApi)
     $('#lookBigPhoto'+i).css({"height":winHeight+"px"})
     $('#lookBigPhoto'+i).css({"width":"100%"})
     $('body').css('touch-action','none');
+    $('body').css('overflow','hidden');
   });
   $(staffPro).click(function(){
     document.addEventListener('touchmove', function (event) {
