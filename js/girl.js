@@ -99,11 +99,12 @@ fetch(myApi)
     $('#lookBigPhoto'+i).css({"width":"100%"})
     $('body').css('touch-action','none');
   });
-//   $(staffPro).click(function(){
-//     $(document).on('touchmove',function (e){
-//       e.preventDefault();
-//   });
-//   });
+  $(staffPro).click(function(){
+    document.addEventListener('touchmove', function (event) {
+    console.log("2342341aasdad")
+    event.preventDefault();
+  });
+  });
 //   // $(staffPro).click('touchmove',function(e){
 //   //   e.preventDefalut()
 //   // },false);
