@@ -101,10 +101,10 @@ fetch(myApi)
       })
   });
   $(staffPro).click(function(){
-    document.addEventListener('touchstart',function(event){
-      console.log("2342341aasdad")
-      event.preventDefault();
-    }, { passive: false });
+    // document.addEventListener('touchstart',function(event){
+    //   console.log("2342341aasdad")
+    //   event.preventDefault();
+    // }, { passive: false });
     document.addEventListener('touchmove',function(event){
       console.log("2342341aasdad")
       event.preventDefault();
