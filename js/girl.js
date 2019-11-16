@@ -94,21 +94,22 @@ fetch(myApi)
   staffPro.addEventListener("click",function() {
     console.log("2342341ff")
     let a=$(document).scrollTop()
-    $('#lookBigPhoto'+i).css({"top":a+"px"})
-    $('#lookBigPhoto'+i).css({"height":winHeight+"px"})
-    $('#lookBigPhoto'+i).css({"width":"100%"})
-    $('body').css('touch-action','none');
-    $('body').css('overflow','hidden');
+    $('#lookBigPhoto'+i).css({
+              "top":a+"px",
+               "height":winHeight+"px",
+               "width":"100%"
+      })
   });
   $(staffPro).click(function(){
-    document.addEventListener('touchmove', function (event) {
-    console.log("2342341aasdad")
-    event.preventDefault();
-  });
-  });
-//   // $(staffPro).click('touchmove',function(e){
-//   //   e.preventDefalut()
-//   // },false);
+    document.addEventListener('touchstart',function(event){
+      console.log("2342341aasdad")
+      event.preventDefault();
+    }, { passive: false });
+    document.addEventListener('touchmove',function(event){
+      console.log("2342341aasdad")
+      event.preventDefault();
+    }, { passive: false });
+});
 // //     staffPro.addEventListener('touchmove', function (event) {
 // //     console.log("2342341aasdad")
 // //     event.preventDefault();
@@ -117,7 +118,10 @@ fetch(myApi)
     console.log("2342341aa")
     $('#lookBigPhoto'+i).css({"height":"0px"})
     $('#lookBigPhoto'+i).css({"width":"0"})
-    $('body').css('height','');
+    $("body").css({
+      　　position: "unset",
+      　　width: ""
+      });
   });
    var mySwiper = new Swiper('#lookBig'+i,{
     direction : 'horizontal',
