@@ -1,7 +1,7 @@
 //学习一下fetch
 
 $(document).ready(function(){;
-  var winHig = $(window).height()-66
+  var winHig = $(window).height()-13
   $("#flip").css({"height":winHig+"px"})
   $("#panel").click(function(){
     $("#flip").slideUp();
