@@ -2,9 +2,7 @@ body{
   background-image: url(back2.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  /* background-attachment: fixed; */
-  background-attachment: initial;
-
+  background-attachment: fixed;
 }
 #flip{
   background-image: url(back.png);
