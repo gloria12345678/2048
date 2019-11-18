@@ -1,16 +1,15 @@
-//学习一下fetch
-
-$(document).ready(function(){;
-  var winHig = $(window).height()-13
-  $("#flip").css({"height":winHig+"px"})
-  $("#panel").click(function(){
-    $("#flip").slideUp();
-    $("#aaa").slideDown();
-  })
+function clickBody(banId,btnId,contenId){
+var winHig = $(window).height()-13
+$(banId).css({"height":winHig+"px"})
+$(btnId).click(function(){
+  $(banId).slideUp();
+  $(contenId).slideDown();
+})
+}
+function TochMove(){
   var tochStat,tochIng,tochEnd;
   $(document).on('touchstart',function(e){
-    tochStat = e.originalEvent.changedTouches[0].pageY;//开始时的坐标
-    // console.log(tochStat);
+    tochStat = e.originalEvent.changedTouches[0].pageY;
   });
    $(document).on('touchmove',function(e){
             tochEnd = e.originalEvent.changedTouches[0].pageY;
@@ -21,4 +20,8 @@ $(document).ready(function(){;
               $("#aaa").slideUp();
             }
         });
+}
+$(document).ready(function(){;
+  clickBody("#flip","#panel","#aaa")
+  TochMove()
 }); 

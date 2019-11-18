@@ -1,15 +1,19 @@
 body{
+  background-image: url(back2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-attachment: fixed; */
+  background-attachment: initial;
+
+}
+#flip{
   background-image: url(back.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fbb3c4;
   background-size: cover;
-}
-#flip
-{
 	padding:5px;
 	text-align:center;
-  /* background-color:#e5eecc; */
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -30,10 +34,18 @@ body{
   padding:10px;
 }
 #aaa{
-  height: 600px;
   width: 100%;
-  background-color: burlywood;
   display: none;
+}
+.eee{
+  height: 400px;
+  width: 100%;
+  background-color: #faebd782e;
+}
+.ddd{
+  height: 500px;
+  width: 100%;
+  background-color: #5f9ea07d;;
 }
 * {  
   margin: 0;  
