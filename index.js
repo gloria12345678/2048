@@ -1,27 +1,7 @@
-function clickBody(banId,btnId,contenId){
-var winHig = $(window).height()-13
-$(banId).css({"height":winHig+"px"})
-$(btnId).click(function(){
-  $(banId).slideUp();
-  $(contenId).slideDown();
-})
+var nums = new Array(1,2,3,4,5,6);
+var len = nums.length;
+for (var i = 0; i < len; i ++ ){
+  for (var j=0 ; j < len; j ++ ){
+    console.log(nums[i],nums[j])
+  }
 }
-function TochMove(){
-  var tochStat,tochIng,tochEnd;
-  $(document).on('touchstart',function(e){
-    tochStat = e.originalEvent.changedTouches[0].pageY;
-  });
-   $(document).on('touchmove',function(e){
-            tochEnd = e.originalEvent.changedTouches[0].pageY;
-            tochIng = tochEnd- tochStat;
-            console.log(tochIng)
-            if(tochIng>200){
-              $("#flip").slideDown();
-              $("#aaa").slideUp();
-            }
-        });
-}
-$(document).ready(function(){;
-  clickBody("#flip","#panel","#aaa")
-  TochMove()
-}); 
